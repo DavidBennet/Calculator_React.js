@@ -1,0 +1,85 @@
+#root {
+  max-width: 100vw;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.wrapper {
+  background: #0a0a0a;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+}
+
+.calculator {
+  background: #e2dfda;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: center;
+  justify-items: center;
+  border-radius: 4px;
+}
+
+.screen {
+  grid-column-start: 1;
+  grid-column-end: 5;
+
+  height: 4rem;
+  width: 97.5%;
+  padding: 0.5rem;
+  margin: 2px;
+
+  border: 1px solid #262626;
+  border-radius: 2px;
+  box-sizing: border-box;
+
+  display: flex;
+  align-items: center;
+  justify-content: end;
+
+  background: #f1f5f9;
+  font-size: xx-large;
+}
+
+button {
+  width: 3rem;
+  height: 3rem;
+  margin: 1.5px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid #262626;
+  border-radius: 2px;
+
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+button:hover {
+  background: #262626;
+  color: #f1f5f9;
+}
+
+#delete {
+  background: rgb(107, 2, 2);
+}
+
+#clear {
+  background: rgb(21, 21, 160);
+}
+
+#equal {
+  background: rgb(18, 107, 0);
+  grid-column-start: 4;
+  grid-column-end: 4;
+}
+
+.signs {
+  background: #beab15;
+}
